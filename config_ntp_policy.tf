@@ -6,7 +6,7 @@ output "organization_moid" {
 }
 
 resource "intersight_ntp_policy" "PODX" {
-  name        = "PODX-ntp-policy"
+  name        = "${var.organization_name}-ntp-policy"
   description = "test policy from terraform"
   enabled     = true
   ntp_servers = [
