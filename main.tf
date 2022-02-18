@@ -7,6 +7,7 @@ terraform {
     }
   }
 }
+# Intersight Authentication details
 provider "intersight" {
   apikey    = var.apikey
   secretkey = var.secretkey
